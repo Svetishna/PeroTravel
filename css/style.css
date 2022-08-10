@@ -1,3 +1,127 @@
+.header {
+    padding-top: 27px;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+.header__headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 152px;
+}
+
+.header__nav-btn {
+    display: none;
+    line-height: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .header__navigation {
+        display: none;
+    }
+
+    .header__nav-btn {
+        display: block;
+    }
+}
+
 .navigation__list {
     display: flex;
+}
+
+.navigation__list .navigation__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navigation__link:active,
+.navigation__link_active {
+    color: var(--yellow);
+}
+
+.hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero__headings {
+    position: relative;
+    max-width: 723px;
+}
+
+.hero__headings h2 {
+    font-weight: 900;
+    line-height: 117px;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+    margin-top: -10px;
+}
+
+.hero__headings h3 {
+    font-weight: 700;
+    line-height: 88px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.hero__headings h4 {
+    font-family: 'mr_KindlyJasmineG';
+    font-weight: 400;
+    line-height: 64px;
+    color: var(--yellow);
+    position: absolute;
+    top: -15.5%;
+    right: 5%;
+}
+
+@media (max-width: 782px) {
+    .hero__headings {
+        max-width: 463px;
+    }
+
+    .hero__headings h3 {
+        line-height: 59px;
+    }
+
+    .hero__headings h2 {
+        line-height: 86px;
+        margin-top: 12px;
+    }
+
+    .hero__headings h4 {
+        line-height: 48px;
+        top: -10%;
+        right: 0%;
+    }
+}
+
+@media (max-width: 428px) {
+    .hero__headings {
+        max-width: 323px;
+    }
+
+    .hero__headings h2 {
+        line-height: 65px;
+    }
+
+    .hero__headings h4 {
+        top: -17%;
+        right: 0.5%;
+    }
+}
+
+.hero__soc_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__soc_list li:not(:last-child) {
+    margin-bottom: 15px;
 }
