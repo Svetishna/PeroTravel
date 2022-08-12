@@ -1,5 +1,5 @@
 .header {
-    padding-top: 27px;
+    padding: 27px 0 250px 0;
     background-image: url(/img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,12 +22,22 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 27px 0 320px 0;
+    }
+
     .header__navigation {
         display: none;
     }
 
     .header__nav-btn {
         display: block;
+    }
+}
+
+@media (max-width: 428px) {
+    .header {
+        padding: 27px 0 105px 0;
     }
 }
 
@@ -45,8 +55,8 @@
 }
 
 .hero {
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 700px 30px;
     justify-content: space-between;
 }
 
@@ -66,7 +76,7 @@
 .hero__headings h3 {
     font-weight: 700;
     line-height: 88px;
-    color: #FFFFFF;
+    color: var(--white);
     text-transform: uppercase;
 }
 
@@ -80,7 +90,11 @@
     right: 5%;
 }
 
-@media (max-width: 782px) {
+.hero__soc {
+    margin-top: 100px;
+}
+
+@media (max-width: 810px) {
     .hero__headings {
         max-width: 463px;
     }
@@ -101,7 +115,45 @@
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 463px 30px;
+    }
+}
+
+@media (max-width: 540px) {
+    .hero {
+        grid-template-columns: 460px;
+    }
+
+    .hero__soc {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .hero>.hero__button {
+        order: 1;
+    }
+
+    .hero>.hero__soc {
+        order: 2;
+    }
+}
+
+@media (max-width: 510px) {
+    .hero {
+        grid-template-columns: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero {
+        grid-template-columns: 380px;
+    }
+}
+
+@media (max-width: 440px) {
     .hero__headings {
         max-width: 323px;
     }
@@ -116,12 +168,36 @@
     }
 }
 
-.hero__soc_list {
+.soc_list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero__soc_list li:not(:last-child) {
+.soc_list li:not(:last-child) {
     margin-bottom: 15px;
+}
+
+.blue_button {
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 60px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    padding: 16px 72px;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .blue_button {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 428px) {
+    .blue_button {
+        margin-top: 90px;
+    }
 }
