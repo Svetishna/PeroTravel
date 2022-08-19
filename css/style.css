@@ -1,6 +1,6 @@
 .header {
     padding: 27px 0 250px 0;
-    background-image: url(/img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@
 
 @media (max-width: 428px) {
     .header {
-        padding: 27px 0 105px 0;
+        padding: 27px 0 400px 0;
     }
 }
 
@@ -185,8 +185,28 @@
     justify-content: flex-end;
     margin-top: -113px;
     margin-right: -125px;
+    overflow-x: hidden;
 }
 
 .aside__video_preview img:first-child {
     margin-right: 20px;
+}
+
+.aside__img {
+    width: 360px;
+    height: 227px;
+}
+
+@media (max-width: 768px) {
+    .aside__img {
+        width: 295px;
+        height: 187px;
+    }
+}
+
+@media (max-width: 428px) {
+    .aside__video_preview {
+        margin-top: -85px;
+        margin-right: -205px;
+    }
 }
