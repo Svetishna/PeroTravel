@@ -178,6 +178,7 @@
 
 .aside {
     max-width: 100%;
+    margin-bottom: 150px;
 }
 
 .aside__video_preview {
@@ -209,4 +210,25 @@
         margin-top: -85px;
         margin-right: -205px;
     }
+}
+
+.popular__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular__header {
+    font-weight: 700;
+    line-height: 29px;
+    color: var(--blue);
+    margin: 0;
+}
+
+.popular__refer {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: var(--black);
 }

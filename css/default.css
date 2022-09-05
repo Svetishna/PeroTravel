@@ -5,6 +5,8 @@ html {
 :root {
     --yellow: #FFC700;
     --white: #FFFFFF;
+    --blue: #0499DD;
+    --black: #282828;
 }
 
 *,
@@ -62,6 +64,10 @@ h3 {
 
 h4 {
     font-size: 64px;
+}
+
+h5 {
+    font-size: 24px;
 }
 
 @media (max-width: 810px) {
