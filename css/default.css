@@ -50,6 +50,9 @@ ul {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
 }
@@ -111,6 +114,13 @@ h6 {
     padding: 0 30px;
 }
 
+.popular__container_items {
+    /* max-width: 1180px; */
+    /* margin: 0 auto; */
+    /* padding: 0 30px; */
+    margin: 0 0 0 auto;
+}
+
 @media (max-width: 768px) {
     .container {
         max-width: 670px;
@@ -123,26 +133,11 @@ h6 {
     }
 }
 
-.blue_button {
+.button {
     background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
-    border-radius: 60px;
     border: none;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: var(--white);
-    padding: 16px 72px;
-    margin-top: 60px;
-}
-
-@media (max-width: 768px) {
-    .blue_button {
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 428px) {
-    .blue_button {
-        margin-top: 90px;
-    }
 }
