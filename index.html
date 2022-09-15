@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Путешествуй вместе с Pero travel</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/index.js" type="module" defer></script>
+    <script src="./js/slider.js" type="module" defer></script>
 </head>
 
 <body>
@@ -91,7 +92,7 @@
                     <a class="popular__refer text" href="#">Смотреть все</a>
                 </div>
                 <div class="popular__items">
-                    <div class="popular__item">
+                    <div class="popular__item popular__back_first">
                         <p class="item__tag text">Автобусный тур</p>
                         <h6 class="item__header">Обзорная по Сочи (из Адлера)</h6>
                         <div class="item__extras">
@@ -166,9 +167,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="popular__item">
-                        <p class="item__tag text">Автобусный тур</p>
-                        <h6 class="item__header">Обзорная по Сочи (из Адлера)</h6>
+                    <div class="popular__item popular__back_second">
+                        <p class="item__tag text">Конный тур</p>
+                        <h6 class="item__header">Конные прогулки</h6>
                         <div class="item__extras">
                             <div class="item__extra">
                                 <svg class="item__svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"
@@ -180,7 +181,7 @@
                                         d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z"
                                         fill="white" />
                                 </svg>
-                                <p class="text item__tag">6 часов</p>
+                                <p class="text item__tag">1,5 часа</p>
                             </div>
                             <div class="item__extra">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -225,15 +226,14 @@
                                         stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                                <p class="text item__tag">618 ₽</p>
+                                <p class="text item__tag">1 809 ₽</p>
                             </div>
                         </div>
                         <div class="item__description">
-                            <p class="text">Приглашаем вас на экскурсию
-                                "Обзорная по Большому Сочи":
-                                Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на
-                                побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36
-                                годах по проекту архитектора С. И. Воробьева...</p>
+                            <p class="text">Конные прогулки проходят в Лазурной долине. С долины открывается красивый
+                                вид на море, горы и лес. На всем пути следования экскурсии вас будут сопровождать
+                                опытные инструктора. Катание на лошадях или иппотерапия очень полезна для детей и
+                                взрослых...</p>
                         </div>
                         <div class="item__button">
                             <button class="button item__button__more">
@@ -241,9 +241,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="popular__item">
-                        <p class="item__tag text">Автобусный тур</p>
-                        <h6 class="item__header">Обзорная по Сочи (из Адлера)</h6>
+                    <div class="popular__item popular__back_third">
+                        <p class="item__tag text">Квадротур</p>
+                        <h6 class="item__header">Пасть дракона</h6>
                         <div class="item__extras">
                             <div class="item__extra">
                                 <svg class="item__svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"
@@ -255,7 +255,7 @@
                                         d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z"
                                         fill="white" />
                                 </svg>
-                                <p class="text item__tag">6 часов</p>
+                                <p class="text item__tag">2,5 часа</p>
                             </div>
                             <div class="item__extra">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -300,15 +300,13 @@
                                         stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                                <p class="text item__tag">618 ₽</p>
+                                <p class="text item__tag">3 515 ₽</p>
                             </div>
                         </div>
                         <div class="item__description">
-                            <p class="text">Приглашаем вас на экскурсию
-                                "Обзорная по Большому Сочи":
-                                Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на
-                                побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36
-                                годах по проекту архитектора С. И. Воробьева...</p>
+                            <p class="text">Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль белых скал и
+                                самшитовый лес к водопаду Глубокий Яр или "Пасть Дракона" (экскурсионное название).
+                                Высота водопада 41,5 метр - это один из самых высоких водопадов Большого Сочи...</p>
                         </div>
                         <div class="item__button">
                             <button class="button item__button__more">
@@ -316,9 +314,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="popular__item">
+                    <div class="popular__item popular__back_fourth">
                         <p class="item__tag text">Автобусный тур</p>
-                        <h6 class="item__header">Обзорная по Сочи (из Адлера)</h6>
+                        <h6 class="item__header">Женский монастырь</h6>
                         <div class="item__extras">
                             <div class="item__extra">
                                 <svg class="item__svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"
@@ -330,7 +328,7 @@
                                         d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z"
                                         fill="white" />
                                 </svg>
-                                <p class="text item__tag">6 часов</p>
+                                <p class="text item__tag">4 часа</p>
                             </div>
                             <div class="item__extra">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -379,11 +377,13 @@
                             </div>
                         </div>
                         <div class="item__description">
-                            <p class="text">Приглашаем вас на экскурсию
-                                "Обзорная по Большому Сочи":
-                                Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на
-                                побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36
-                                годах по проекту архитектора С. И. Воробьева...</p>
+                            <p class="text">Троице - Георгиевский женский монастырь расположен в селе Лесное в
+                                живописном месте, в котором гармонично сочетаются красота природы и красота архитектуры
+                                сотворенная руками человека.
+                                Это удивительное место расположено совсем недалеко от Чёрного моря - всего в 20
+                                километрах
+
+                            </p>
                         </div>
                         <div class="item__button">
                             <button class="button item__button__more">
@@ -392,6 +392,30 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+
+
             </div>
         </div>
     </main>
