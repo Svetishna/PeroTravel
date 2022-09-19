@@ -1,7 +1,8 @@
 export const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
+    // slidesPerView: 4,
 
     // Navigation arrows
     navigation: {
@@ -13,4 +14,12 @@ export const swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 1,
+    //     },
+    //     768: {
+    //         slidesPerView: 2,
+    //     }
+    // }
 });

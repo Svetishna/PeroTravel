@@ -42,7 +42,6 @@
   margin-bottom: 233px;
 }
 
-
 /* Мой стиль */
 .swiper-wrapper .swiper-slide:not(:last-child) {
   margin-right: 20px;
@@ -87,6 +86,20 @@
   background-position: center;
   position: relative;
   transition-property: transform;
+}
+
+@media (max-width:768px) {
+  .swiper-slide {
+    width: 295px !important;
+    padding: 174px 0 30px 15px;
+  }
+}
+
+@media (max-width:428px) {
+  .swiper-slide {
+    width: 280px !important;
+    padding: 182px 0 30px 15px;
+  }
 }
 
 .swiper-slide-invisible-blank {
@@ -258,12 +271,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue, var(--blue));
+  color: var(--blue);
+}
+
+@media (max-width:768px) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: -50px;
+  }
 }
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.35;
+  color: var(--gray);
   cursor: auto;
   pointer-events: none;
 }
@@ -303,8 +324,7 @@
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  margin-left: 100px;
-  /* right: 1760px; */
+  margin-left: 65px;
   left: auto;
 }
 
@@ -532,11 +552,19 @@ button.swiper-pagination-bullet {
 .swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
-  left: 10%;
   bottom: 100px;
   z-index: 50;
-  height: 5px;
+  height: 2px;
   width: 98%;
+  margin-left: 140px;
+}
+
+@media (max-width:768px) {
+
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 129px;
+  }
 }
 
 .swiper-vertical>.swiper-scrollbar,
