@@ -62,7 +62,7 @@
 
 .hero__headings {
     position: relative;
-    max-width: 723px;
+    width: 723px;
 }
 
 .hero__headings h2 {
@@ -86,7 +86,7 @@
     line-height: 64px;
     color: var(--yellow);
     position: absolute;
-    top: -15.5%;
+    top: 25%;
     right: 5%;
 }
 
@@ -119,7 +119,7 @@
 
     .hero__headings h4 {
         line-height: 48px;
-        top: -10%;
+        top: 15%;
         right: 0%;
     }
 }
