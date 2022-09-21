@@ -8,6 +8,7 @@ html {
     --blue: #0499DD;
     --black: #282828;
     --gray: #D4D4D4;
+    --gray2: #EDEDED;
 }
 
 *,
@@ -72,6 +73,9 @@ h4 {
 
 h5 {
     font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: var(--blue);
 }
 
 h6 {
