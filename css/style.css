@@ -312,7 +312,25 @@
 }
 
 .about_us {
-    margin-top: 820px;
+    margin: 820px auto 150px auto;
+    background-image: url(../img/landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left center;
+    background-color: inherit;
+    position: relative;
+    min-height: 750px;
+}
+
+@media(min-width:2090px) {
+    .about_us {
+        background-position: center;
+    }
+}
+
+.about_us__container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .about_us__info {
@@ -320,6 +338,8 @@
     border-radius: 10px;
     padding: 60px 75px 105px 85px;
     width: 542px;
+    position: absolute;
+    margin-top: 137px;
 }
 
 .about_us__header {
